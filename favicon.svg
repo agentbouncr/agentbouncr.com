@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 64">
+  <style>
+    .structure { fill: #0f172a; stroke: #0f172a; }
+    @media (prefers-color-scheme: dark) {
+      .structure { fill: #f8fafc; stroke: #f8fafc; }
+    }
+  </style>
+  <rect class="structure" x="12" y="13" width="4" height="38" rx="2"/>
+  <rect class="structure" x="56" y="13" width="4" height="38" rx="2"/>
+  <path class="structure" d="M 23.88 25 A 14 14 0 1 1 23.88 39" fill="none" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M 32 26 L 39 32 L 32 38" fill="none" stroke="#2563eb" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

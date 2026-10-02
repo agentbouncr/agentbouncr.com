@@ -1,0 +1,181 @@
+/* AgentBouncr — Pause-Seite
+   Keine Abhängigkeiten, kein Build, kein JavaScript, keine Schriftarten von
+   fremden Servern. Eine Datei, die in zehn Jahren noch so aussieht wie heute. */
+
+:root {
+  --brand: #2563eb;
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --fg: #0f172a;
+  --fg-muted: #475569;
+  --fg-faint: #64748b;
+  --border: #e2e8f0;
+  --code-bg: #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: #60a5fa;
+    --bg: #020617;
+    --bg-soft: #0f172a;
+    --fg: #f8fafc;
+    --fg-muted: #cbd5e1;
+    --fg-faint: #94a3b8;
+    --border: #1e293b;
+    --code-bg: #1e293b;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* --- Kopf ---------------------------------------------------------------- */
+
+header {
+  padding: 3.5rem 0 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.brand svg { height: 2rem; width: auto; }
+.brand .mark-chevron { stroke: var(--brand); }
+
+.brand span {
+  font-size: 1.35rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+/* --- Statuszeile --------------------------------------------------------- */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2.5rem 0 0;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #f59e0b;
+  flex: none;
+}
+
+/* --- Text ---------------------------------------------------------------- */
+
+h1 {
+  margin: 1.25rem 0 0;
+  font-size: clamp(1.9rem, 6vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 3rem 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 1rem 0; color: var(--fg-muted); }
+
+p.lead {
+  font-size: 1.1rem;
+  color: var(--fg-muted);
+  margin-top: 1.25rem;
+}
+
+strong { color: var(--fg); font-weight: 600; }
+
+a { color: var(--brand); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background: var(--code-bg);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+ul { color: var(--fg-muted); padding-left: 1.2rem; }
+li { margin: 0.4rem 0; }
+
+/* --- Hinweiskasten ------------------------------------------------------- */
+
+.note {
+  margin: 1.5rem 0;
+  padding: 1rem 1.15rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--brand);
+  border-radius: 6px;
+}
+
+.note p { margin: 0.5rem 0; }
+.note p:first-child { margin-top: 0; }
+.note p:last-child { margin-bottom: 0; }
+
+/* --- Fuß ----------------------------------------------------------------- */
+
+footer {
+  margin: 4.5rem 0 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--fg-faint);
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin-bottom: 0.9rem;
+}
+
+footer a { color: var(--fg-muted); }
+
+/* --- Rechtstexte --------------------------------------------------------- */
+
+.legal h1 { font-size: clamp(1.6rem, 5vw, 2rem); margin-top: 2.5rem; }
+.legal h2 { font-size: 1.05rem; margin-top: 2.25rem; }
+.legal p { font-size: 0.95rem; }
+
+.back {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+}

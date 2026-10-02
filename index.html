@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentBouncr — paused</title>
+<meta name="description" content="AgentBouncr, a governance layer for autonomous AI agents, is paused. The hosted service has been shut down; the SDKs remain installable but have no endpoint to reach.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="AgentBouncr — paused">
+<meta property="og:description" content="The project is paused. The hosted service has been shut down.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agentbouncr.com/">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 72 64" fill="none" role="img" aria-label="AgentBouncr">
+        <rect x="12" y="13" width="4" height="38" rx="2" fill="currentColor"/>
+        <rect x="56" y="13" width="4" height="38" rx="2" fill="currentColor"/>
+        <path d="M 23.88 25 A 14 14 0 1 1 23.88 39" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+        <path class="mark-chevron" d="M 32 26 L 39 32 L 32 38" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>AgentBouncr</span>
+    </a>
+  </header>
+
+  <main>
+
+    <div class="status"><span class="dot" aria-hidden="true"></span> Project paused</div>
+
+    <h1>AgentBouncr is paused.</h1>
+
+    <p class="lead">
+      AgentBouncr was a governance layer for autonomous AI agents: every tool call
+      checked against a policy <em>before</em> it executed, with a tamper-evident
+      audit trail behind it. Development has been paused, and the hosted service
+      at this domain has been shut down.
+    </p>
+
+    <p>
+      This was a deliberate decision, not an outage. The project is being wound
+      down in an orderly way rather than left to rot: the code, the data and the
+      documentation have been archived, and this page will stay here.
+    </p>
+
+    <h2>If you installed an SDK</h2>
+
+    <p>
+      The published packages still install, but they have nothing to talk to — the
+      API they default to is gone. Calls to <code>agentbouncr.com</code> will fail.
+    </p>
+
+    <ul>
+      <li><code>pip install agentbouncr</code> — Python SDK, last release 0.2.0</li>
+      <li><code>npm install agentbouncr</code> — TypeScript SDK, last release 0.1.2</li>
+      <li><code>n8n-nodes-agentbouncr</code> — n8n community node, last release 0.1.1</li>
+    </ul>
+
+    <p>
+      They are marked as unmaintained. Nothing was unpublished: removing them would
+      break anyone who still has them pinned, and would not undo the fact that they
+      were released.
+    </p>
+
+    <h2>The code</h2>
+
+    <p>
+      The policy engine remains public and MIT-licensed. It is not maintained, but
+      it is not going anywhere either.
+    </p>
+
+    <ul>
+      <li><a href="https://github.com/agentbouncr/agentbouncr">github.com/agentbouncr/agentbouncr</a> — the framework</li>
+      <li><a href="https://github.com/agentbouncr/n8n-nodes-agentbouncr">github.com/agentbouncr/n8n-nodes-agentbouncr</a> — the n8n node</li>
+    </ul>
+
+    <h2>If you had an account</h2>
+
+    <div class="note">
+      <p>
+        The hosted service is shut down and its databases have been taken offline.
+        If you had a workspace here and want to know what happened to your data, or
+        want it deleted from the archived copies, write to
+        <a href="mailto:hello@agentbouncr.com">hello@agentbouncr.com</a> — that
+        address still works.
+      </p>
+    </div>
+
+    <p style="margin-top:2.5rem">
+      The name remains a registered trademark.
+    </p>
+
+  </main>
+
+  <footer>
+    <nav>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="mailto:hello@agentbouncr.com">hello@agentbouncr.com</a>
+    </nav>
+    <p style="margin:0">© 2026 Sönke Cramme · AgentBouncr</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
